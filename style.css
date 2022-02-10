@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   padding: 0%;
   margin: 0%;
 }
@@ -34,14 +35,19 @@ footer{
 }
 
 .box {
- margin: max(2vh, 2vw);
-  width: max(15vh, 15vw);
-  height: max(15vh, 15vw);
+  margin: max(2vh, 2vw);
+  width: max(20vh, 20vw);
+  height: max(25vh, 25vw);
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
   border-width: max(5vh, 5vw);
   border-color: white;
+
 }
 .name {
   color: white;
   font-size: max(1vh, 1vw);
+}
+
+img{
+  size: max(1vh, 1vw)
 }
