@@ -4,14 +4,12 @@
   margin: 0%;
   font-family:"Roboto";
 }
-
 header {
   background-image: white;
   height: max-content;
   border-bottom: #505050;
   border-style: solid;
 }
-
 main{
     padding:2vh;
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
