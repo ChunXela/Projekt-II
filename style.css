@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
-  font-family:"Roboto";
+  font-family: "Roboto";
 }
 header {
   background-image: white;
@@ -10,11 +10,11 @@ header {
   border-bottom: #505050;
   border-style: solid;
 }
-a{
+a {
   text-decoration: none;
-color: inherit;
+  color: inherit;
 }
-.ms_logo{
+.ms_logo {
   border-radius: 2vh;
   height: min(10vh, 15vw);
   position: absolute;
@@ -22,42 +22,39 @@ color: inherit;
   top: 2vw;
   bottom: 2vw;
 }
-main{
+main {
   display: flex;
   flex-direction: column;
-  padding:2vh;
+  padding: 2vh;
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
 }
 
-
-
-footer{
-    background-color: white;
-    max-height: max-content;
-    border-width: 0.1vw;
-    border-top: #505050;
-    border-bottom: white;
-    border-left: white;
-    border-right: white;
+footer {
+  background-color: white;
+  max-height: max-content;
+  border-width: 0.1vw;
+  border-top: #505050;
+  border-bottom: white;
+  border-left: white;
+  border-right: white;
 }
 
-.minititle{
+.minititle {
   text-align: center;
   margin-top: max(2vh, 2vw);
-  font-size: max(1.5vh,1.5vw);
+  font-size: max(1.5vh, 1.5vw);
 }
 
 .title {
   text-align: center;
   margin-top: max(2vh, 2vw);
-  font-size: max(3vh,3vw);
-
+  font-size: max(3vh, 3vw);
 }
 
 .box {
   display: grid;
   grid-template-rows: 0.4fr 8fr 1fr;
-  grid-template-columns: 2.5vw 8fr 1fr; 
+  grid-template-columns: 2.5vw 8fr 1fr;
   margin: max(2vh, 2vw);
   width: max(20vh, 20vw);
   height: max(25vh, 25vw);
@@ -67,7 +64,7 @@ footer{
   border-color: white;
 }
 
-.nameofsomething{
+.nameofsomething {
   text-align: center;
   grid-row-start: 1;
   width: max(20vh, 20vw);
@@ -79,14 +76,12 @@ footer{
   border-right: white;
   color: white;
   font-size: max(1vh, 1vw);
-
 }
 
-
-.imageofsomething{
-  width: max(100%,15vw);
-  height: max(15vw,100%);
-  grid-row-start:2;
+.imageofsomething {
+  width: max(100%, 15vw);
+  height: max(15vw, 100%);
+  grid-row-start: 2;
   grid-column-start: 2;
   border-style: solid;
   border-width: 0.1vw;
@@ -102,7 +97,7 @@ footer{
   grid-template-columns: 1fr 1fr;
 }
 
-.likebutton{
+.likebutton {
   background-color: #505050;
   width: max(10vh, 10vw);
   height: 7vh;
@@ -112,13 +107,12 @@ footer{
   text-align: center;
 }
 
-.favoritebutton{
-
+.favoritebutton {
   background-color: #505050;
   width: max(10vh, 10vw);
   height: 7vh;
   border-style: solid;
   border-width: 0.1vw;
-  border-color: white;  
+  border-color: white;
   text-align: center;
 }
