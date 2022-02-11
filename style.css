@@ -8,8 +8,6 @@
 header {
   background-image: white;
   height: max-content;
-  display: grid;
-  grid-template-columns: 1fr,1fr,1fr;
   border-bottom: #505050;
   border-style: solid;
 }
@@ -24,16 +22,17 @@ footer{
     max-height: max-content;
 }
 
-.smalltitle{
+.minititle{
+  text-align: center;
   margin-top: max(2vh, 2vw);
-  font-size: max(1vh,1vw);
-  grid-column-start: 2;
+  font-size: max(1.5vh,1.5vw);
 }
 
 .title {
+  text-align: center;
   margin-top: max(2vh, 2vw);
   font-size: max(3vh,3vw);
-  grid-column-start: 2;
+
 }
 
 .box {
