@@ -12,7 +12,6 @@ header {
   grid-template-columns: 1fr,1fr,1fr;
   border-bottom: #505050;
   border-style: solid;
-  
 }
 
 main{
@@ -48,8 +47,6 @@ footer{
   border-style: solid;
   border-width: 0.1vw;
   border-color: white;
-
-  
 }
 
 .nameofsomething{
