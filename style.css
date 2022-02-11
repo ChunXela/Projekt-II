@@ -29,25 +29,41 @@ footer{
   font-size: max(2vh, 2vw);
 }
 
-.box, nav{
-    border-width: max(2vh,2vw);
-    border-color: white;
-}
 
 .box {
+  display: grid;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   margin: max(2vh, 2vw);
   width: max(20vh, 20vw);
   height: max(25vh, 25vw);
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
   border-width: max(5vh, 5vw);
   border-color: white;
+  
+}
+
+.nameofsomething{
+  grid-row-start: 1;
+  grid-column-start: 3;
+    border-width: 100vw;
+    border-color: white;
+    width: max-content;
+    height: min-content;
 
 }
-.name {
+
+
+.imageofsomething{
+  width: max(90%,15vw);
+  height: max(30vh,200%);
+  grid-column-start: 2;
+  grid-row-start:3;
+}
+
+.infoofsomething {
+  grid-column-start:1;
+  grid-row-start: 9;
   color: white;
   font-size: max(1vh, 1vw);
-}
-
-img{
-  size: max(1vh, 1vw)
 }
