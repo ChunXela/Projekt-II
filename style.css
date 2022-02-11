@@ -34,7 +34,7 @@ footer{
 .box {
   display: grid;
   grid-template-rows: 2fr 8fr 1fr;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 2.5vw 8fr 1fr; 
   margin: max(2vh, 2vw);
   width: max(20vh, 20vw);
   height: max(25vh, 25vw);
@@ -57,7 +57,7 @@ footer{
   width: max(90%,15vw);
   height: max(15vw,100%);
   grid-row-start:2;
-  grid-column-start: 0;
+  grid-column-start: 2;
 }
 
 .infoofsomething {
