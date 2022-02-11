@@ -5,7 +5,7 @@
 }
 
 header {
-  background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+  background-image: linear-gradient(90deg, white 0, black 100%);
   height: 10vh;
   display: grid;
   grid-row: span;
@@ -16,7 +16,7 @@ main{
 }
 
 footer{
-    background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+    background-image: linear-gradient(90deg, white 0, gray 100%);
     max-height: max-content;
 }
 
@@ -37,9 +37,9 @@ footer{
   margin: max(2vh, 2vw);
   width: max(20vh, 20vw);
   height: max(25vh, 25vw);
-  background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+  background-image: linear-gradient(90deg, white 0, black 100%);
   border-width: max(5vh, 5vw);
-  border-color: white;
+  border-image: linear-gradient(90deg, #ab058b 0, indigo 100%); 
   
 }
 
@@ -56,14 +56,29 @@ footer{
 
 .imageofsomething{
   width: max(90%,15vw);
-  height: max(30vh,200%);
+  height: max(15vw,100%);
   grid-column-start: 2;
   grid-row-start:3;
 }
 
 .infoofsomething {
-  grid-column-start:1;
-  grid-row-start: 9;
+  grid-row-start: 10;
   color: white;
   font-size: max(1vh, 1vw);
+}
+.likebutton{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  border-color: black;
+}
+
+.favoritebutton{
+
+  background-color: black ;
+  width: max(10vh, 10vw);
+  height: 7vh;
+  border-width: 2vh;
+  border-color: orange;
+  grid-column-start: 1;
+  grid-row-start: 7;
 }
