@@ -2,13 +2,17 @@
   box-sizing: border-box;
   padding: 0%;
   margin: 0%;
+  font-family:"Roboto";
 }
 
 header {
-  background-image: linear-gradient(90deg, white 0, black 100%);
-  height: 10vh;
+  background-image: white;
+  height: max-content;
   display: grid;
-  grid-row: span;
+  grid-template-columns: 1fr,1fr,1fr;
+  border-bottom: #505050;
+  border-style: solid;
+  
 }
 
 main{
@@ -17,47 +21,57 @@ main{
 }
 
 footer{
-    background-image: linear-gradient(90deg, white 0, gray 100%);
+    background-color: white;
     max-height: max-content;
 }
 
-.Title {
-  margin-left: max(2vh, 2vw);
+.smalltitle{
   margin-top: max(2vh, 2vw);
+  font-size: max(1vh,1vw);
+  grid-column-start: 2;
 }
 
-.Title:hover {
-  font-size: max(2vh, 2vw);
+.title {
+  margin-top: max(2vh, 2vw);
+  font-size: max(3vh,3vw);
+  grid-column-start: 2;
 }
-
 
 .box {
   display: grid;
-  grid-template-rows: 2fr 8fr 1fr;
+  grid-template-rows: 0.4fr 8fr 1fr;
   grid-template-columns: 2.5vw 8fr 1fr; 
   margin: max(2vh, 2vw);
   width: max(20vh, 20vw);
   height: max(25vh, 25vw);
-  background-image: linear-gradient(90deg, white 0, black 100%);
+  background-color: #505050;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
 
   
 }
 
 .nameofsomething{
+  text-align: center;
   grid-row-start: 1;
-  grid-column-start: 2;
-  border-width: 100vw;
-  border-color: white;
-  width: max-content;
+  width: max(20vh, 20vw);
   height: min-content;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+  color: white;
 }
 
 
 .imageofsomething{
-  width: max(90%,15vw);
+  width: max(100%,15vw);
   height: max(15vw,100%);
   grid-row-start:2;
   grid-column-start: 2;
+  border-style: solid;
+  border-width: 0.1vw;
+  color: white;
 }
 
 .infoofsomething {
@@ -68,21 +82,24 @@ footer{
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
 }
+
 .likebutton{
-  background-image:linear-gradient(90deg, #ab058b 0, indigo 100%);
+  background-color: #505050;
   width: max(10vh, 10vw);
   height: 7vh;
   border-style: solid;
-  border-width: 0.5vh;
-  border-color: orange;
+  border-width: 0.1vw;
+  border-color: white;
+  text-align: center;
 }
 
 .favoritebutton{
 
-  background-image:linear-gradient(90deg, #ab058b 0, indigo 100%);
+  background-color: #505050;
   width: max(10vh, 10vw);
   height: 7vh;
   border-style: solid;
-  border-width: 0.5vh;
-  border-color: red;  
+  border-width: 0.1vw;
+  border-color: white;  
+  text-align: center;
 }
