@@ -52,37 +52,21 @@ footer {
 }
 .box {
   display: grid;
-  grid-template-rows: 0.4fr 8fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr;
   grid-template-columns: 2.5vw 8fr 1fr;
   margin: max(2vh, 2vw);
-  width: max(20vh, 20vw);
-  height: max(25vh, 25vw);
+  width: 20vw;
+  height: 25vh;
   background-color: #505050;
   border-style: solid;
   border-width: 0.1vw;
   border-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nameofsomething {
   text-align: center;
   grid-row-start: 1;
-  width: max(20vh, 20vw);
+  width: 20vw;
   height: min-content;
   border-style: solid;
   border-width: 0.1vw;
@@ -94,8 +78,9 @@ footer {
 }
 
 .imageofsomething {
-  width: max(100%, 15vw);
-  height: max(15vw, 100%);
+  margin-top: 1vh;
+  width: 15vw;
+  height: min(13vh,50%);
   grid-row-start: 2;
   grid-column-start: 2;
   border-style: solid;
@@ -114,7 +99,7 @@ footer {
 
 .likebutton {
   background-color: #505050;
-  width: max(10vh, 10vw);
+  width: 10vw;
   height: 7vh;
   border-style: solid;
   border-width: 0.1vw;
@@ -124,7 +109,7 @@ footer {
 
 .favoritebutton {
   background-color: #505050;
-  width: max(10vh, 10vw);
+  width: 10vw;
   height: 7vh;
   border-style: solid;
   border-width: 0.1vw;
