@@ -1,0 +1,5 @@
+main {
+  flex-direction: column;
+  padding: 2vh;
+  background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+}

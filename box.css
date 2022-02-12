@@ -1,0 +1,66 @@
+.box {
+  display: grid;
+  grid-template-rows: 2fr, 8fr, 2fr;
+  grid-template-columns: 2.5vw 8fr 1fr;
+  margin: max(2vh, 2vw);
+  width: 20vw;
+  height: 25vh;
+  background-color: #505050;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+}
+
+.nameofsomething {
+  text-align: center;
+  grid-row-start: 1;
+  width: 20vw;
+  height: min-content;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  color: white;
+  font-size: max(1vh, 1vw);
+}
+
+.imageofsomething {
+  margin-top: 1vh;
+  width: 15vw;
+  height: min(13vh, 50%);
+  grid-row-start: 2;
+  grid-column-start: 2;
+  border-style: solid;
+  border-width: 0.1vw;
+  color: white;
+}
+
+.infoofsomething {
+  grid-row-start: 3;
+  color: white;
+  font-size: max(1vh, 1vw);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.likebutton {
+  background-color: #505050;
+  width: 10vw;
+  height: 7vh;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+  text-align: center;
+}
+
+.favoritebutton {
+  background-color: #505050;
+  width: 10vw;
+  height: 7vh;
+  border-style: solid;
+  border-width: 0.1vw;
+  border-color: white;
+  text-align: center;
+}
