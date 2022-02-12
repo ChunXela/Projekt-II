@@ -6,12 +6,11 @@
 }
 
 .nav_under_header{
-  display: flex;
   text-align: center;
   position: sticky;
-  top: 0px;
-  margin-top: 0px;
-  padding: 0px;
+    top: 0px;
+    margin-top: 0px;
+    padding: 0px;
 }
 
 .content_in_nav{
@@ -20,6 +19,7 @@
   flex-wrap: wrap;
   padding: 0px 10px;
 }
+
 .nav_tabs{
   flex-grow: 1;
   list-style: none;
@@ -27,11 +27,21 @@
   border-left: 1px solid #c0c0c0;
   padding: 0px 10px;
   margin: 10px 0px;
-  padding-left: 15.5vh;
-  padding-right: 15.5vh;
 }
 
 .nav_names{
-  padding-left: vh;
+
+
   font-size: 3vh;
+}
+
+.post{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style: none;
+  border-right: 1px solid #c0c0c0;
+  border-left: 1px solid #c0c0c0;
+  padding: 0px 10px;
+  margin: 10px 0px;
 }

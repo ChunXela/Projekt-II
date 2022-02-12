@@ -3,11 +3,11 @@
   grid-template-rows: 2fr, 8fr, 2fr;
   grid-template-columns: 2.5vw 8fr 1fr;
   margin: max(2vh, 2vw);
-  width: 20vw;
+  width: min(20vw);
   height:max-content;
   background-color: #505050;
   border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1px;
   border-color: white;
 }
 
@@ -16,8 +16,7 @@
   grid-row-start: 1;
   width: 20vw;
   height: min-content;
-  border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1px;
   border-top: white;
   border-left: white;
   border-right: white;
@@ -26,13 +25,12 @@
 }
 
 .imageofsomething {
-  margin-top: 1vh;
-  width: 15vw;
+  width: 19.9vw;
   height: max-content;
   grid-row-start: 2;
-  grid-column-start: 2;
+  grid-column-start: 1;
   border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1px;
   color: white;
 }
 
@@ -50,7 +48,7 @@
   width: 10vw;
   height: max-content;
   border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1px;
   border-color: white;
   text-align: center;
 }
@@ -60,7 +58,7 @@
   width: 10vw;
   height: max-content;
   border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1px;
   border-color: white;
   text-align: center;
 }
