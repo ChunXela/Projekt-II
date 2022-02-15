@@ -12,9 +12,10 @@
 
 .ms_logo {
   border-radius: 30px;
-  height: 100px;
+  height: min(5vw);
+  height: max(6vw, 6vh);
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 10px;
   bottom: 10px;
 }
