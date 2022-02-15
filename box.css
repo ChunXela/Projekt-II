@@ -1,30 +1,34 @@
+.postArea{
+  gap: 0px;
+  position: sticky;
+}
+
+
 .box {
-  display: flex;
-  gap: 55px;
-  width: 24rem;
-  height:25rem;
+  margin: 25px;
+  z-index: -1;
+  width: 12rem;
+  height:12.5rem;
+  margin-top: 40px;
   background-color: #505050;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border-width: 1px solid white;
 }
 
 .nameofsomething {
   text-align: center;
   grid-row-start: 1;
-  width: 24rem;
+  width: 12rem;
   height: 2.5rem;
   color: white;
   font-size: 25px;
 }
 
 .imageofsomething {
-  width: 24rem;
-  height: 20rem;
+  width: 11.9rem;
+  height: 10rem;
   grid-row-start: 2;
   grid-column-start: 1;
-  border-style: solid;
-  border-width: 1px;
+  border-width: 1px solid;
   color: white;
 }
 
@@ -39,7 +43,7 @@
 
 .likebutton {
   background-color: #505050;
-  width: 12rem;
+  width: 6rem;
   height: 2rem;
   border-style: solid;
   border-color: white;
@@ -49,10 +53,13 @@
 
 .favoritebutton {
   background-color: #505050;
-  width: 12rem;
+  width: 5.5rem;
   height: 2rem;
   border-style: solid;
-  border-width: 0 1px 0 0;
+  border-width: 0 0 0 0;
   border-color: white;
   text-align: center;
 }
+
+
+ 

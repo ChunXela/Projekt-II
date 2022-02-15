@@ -1,18 +1,22 @@
-header {
+.header {
   background-color: #ffffff;
   padding: 1rem;
   text-align: center;
   position: relative;
   border-bottom: 1px solid #c0c0c0;
+  z-index: 500;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .ms_logo {
-  border-radius: 1.5rem;
-  height: 6rem;
+  border-radius: 30px;
+  height: 100px;
   position: absolute;
-  left: 5px;
-  top: 5px;
-  bottom: 5px;
+  left: 10px;
+  top: 10px;
+  bottom: 10px;
 }
 .minititle {
   text-align: center;

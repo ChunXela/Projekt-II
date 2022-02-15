@@ -1,4 +1,7 @@
 main {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
   padding: 2vh;
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
   height: max-content;
@@ -8,8 +11,5 @@ a, a:focus, a:active{
     color: inherit;
 }
 
-div{
-  display: flex;
-  flex-wrap: wrap;
-  position: sticky;
-}
+
+
