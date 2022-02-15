@@ -1,29 +1,29 @@
 header {
   background-color: #ffffff;
-  padding: 1vw;
+  padding: 1rem;
   text-align: center;
   position: relative;
   border-bottom: 1px solid #c0c0c0;
 }
 
 .ms_logo {
-  border-radius: 2vh;
-  height: min(10vh, 15vw);
+  border-radius: 1.5rem;
+  height: 6rem;
   position: absolute;
-  left: 2vw;
-  top: 2vw;
-  bottom: 2vw;
+  left: 5px;
+  top: 5px;
+  bottom: 5px;
 }
 .minititle {
   text-align: center;
   font-weight: 200;
-  font-size: min(4vh, 5vw);
+  font-size: 30px;
 }
 
 .title {
   text-align: center;
   font-weight: 300;
-  font-size: min(7vh, 9vw);
+  font-size: 70px;
 }
 
 a {

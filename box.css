@@ -1,10 +1,8 @@
 .box {
-  display: grid;
-  grid-template-rows: 2fr, 8fr, 2fr;
-  grid-template-columns: 2.5vw 8fr 1fr;
-  margin: max(2vh, 2vw);
-  width: min(20vw);
-  height:max-content;
+  display: flex;
+  gap: 55px;
+  width: 24rem;
+  height:25rem;
   background-color: #505050;
   border-style: solid;
   border-width: 1px;
@@ -14,19 +12,15 @@
 .nameofsomething {
   text-align: center;
   grid-row-start: 1;
-  width: 20vw;
-  height: min-content;
-  border-width: 1px;
-  border-top: white;
-  border-left: white;
-  border-right: white;
+  width: 24rem;
+  height: 2.5rem;
   color: white;
-  font-size: max(1vh, 1vw);
+  font-size: 25px;
 }
 
 .imageofsomething {
-  width: 19.9vw;
-  height: max-content;
+  width: 24rem;
+  height: 20rem;
   grid-row-start: 2;
   grid-column-start: 1;
   border-style: solid;
@@ -37,7 +31,7 @@
 .infoofsomething {
   grid-row-start: 3;
   color: white;
-  font-size: max(1vh, 1vw);
+  font-size: 25px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
@@ -45,20 +39,20 @@
 
 .likebutton {
   background-color: #505050;
-  width: 10vw;
-  height: max-content;
+  width: 12rem;
+  height: 2rem;
   border-style: solid;
-  border-width: 1px;
   border-color: white;
+  border-width: 0 1px 0 0;
   text-align: center;
 }
 
 .favoritebutton {
   background-color: #505050;
-  width: 10vw;
-  height: max-content;
+  width: 12rem;
+  height: 2rem;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0 1px 0 0;
   border-color: white;
   text-align: center;
 }
