@@ -10,6 +10,48 @@ body{
 
 }
 
+/* header styling */
+
+header {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #c0c0c0;
+  z-index: 500;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.ms_logo {
+  border-radius: 2vh;
+  height: max(6vw, 6vh);
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  bottom: 10px;
+}
+.minititle {
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* under header */
+
 .nav_under_header{
   text-align: center;
   position: sticky;
@@ -36,20 +78,129 @@ body{
 }
 
 .nav_names{
-
-
   font-size: 25px;
 }
-.postArea{
-  display: flex;
-  
-  }
+/* shadow gradient under tabsd */
 
 .gradient{
   background: linear-gradient(
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0.2) 40%,
     rgba(0, 0, 0, 0) 100%
-  );
-  height: 20px;
+    );
+    height: 20px;
+  }
+
+  /* Main area */
+
+  main {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    padding: 2vh;
+    background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+    height: max-content;
+  }
+  a, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .postArea{
+    display: flex;
+    
+    }
+
+  /* box styling */
+
+  .postArea{
+    gap: 0px;
+    position: sticky;
+  }
+  
+  
+  .box {
+    margin: 25px;
+    z-index: -1;
+    /*width: 12rem;
+    height:12.5rem;*/
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    background-color: #505050;
+    border: 1px solid black;
+  }
+  
+  .nameofsomething {
+    text-align: center;
+    grid-row-start: 1;
+   /* width: 12rem;
+    height: 2.5rem;*/
+    height: 38px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .imageofsomething {
+    /*width: 11.9rem;
+    height: 10rem;*/
+  
+    width: 298px;
+    height: 225px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    border-width: 1px solid;
+    color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  .infoofsomething {
+    grid-row-start: 3;
+    color: white;
+    font-size: 25px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .likebutton {
+    background-color: #505050;
+    width: 150px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 1px 0 0;
+    text-align: center;
+  }
+  
+  .favoritebutton {
+    background-color: #505050;
+    width: 148px;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    border-color: white;
+    text-align: center;
+  }
+  
+  
+ /* footer styling */
+ 
+ footer {
+ font-size: 24px;
+ background-color: white;
+ max-height: max-content;
+  border-width: 0.1vw;
+  border-top: #505050;
+  border-bottom: white;
+  border-left: white;
+  border-right: white;
 }
+
+.contactInfo{
+  text-align: center;
+}
+.copyrightHolder{
+  text-align: end;
+}
+
+/* */
