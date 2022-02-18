@@ -96,6 +96,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+min-height: 100%;
 }
 
 .randomImage{
@@ -130,11 +131,9 @@ footer {
   font-size: 24px;
   background-color: white;
   max-height: max-content;
-  border-width: 0.1vw;
-  border-top: #505050;
-  border-bottom: white;
-  border-left: white;
-  border-right: white;
+  border-top: 2px solid #505050;
+  Position: absolute;
+  width: 100%;
 }
 
 .contactInfo {

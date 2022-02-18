@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="makeanaccountstyle.css">
+    <link rel="stylesheet" href="loginstlyle.css">
     <link rel="icon" href="ms_logo.png" type="image/x-icon" />
-    <title>Make an account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
 <body>
-
-      
     <header> 
   
         <a href="https://fyrgeit.github.io/makerspace/index.html" >
@@ -62,57 +60,29 @@
           </a>
         </li>
       </ul>
-      <div class="gradient"></div>
+      <div class="gradient">
+    </div>
     </nav>
 
     <main>
-        <form class="makeAccountBox">
-            <h1>MAKE ACCOUNT</h1>
-            <div class="userinput">
-                <label>
-                    Username
-                    <input type="text" name="username">
+        <form class="login">
+            <div class="loginBox">
+                <label for="Username">
+                    <input type="text">
                 </label>
-            </div>
-            <div class="userinput">
-                <label>
-                    Email
-                    <input type="email" name="Email">
+                <label for="password">
+                    <input type="password">
                 </label>
             </div>
 
-            <div class="userinput">
-
-                <label>Password
-                    <input type="password" name="password" id="pass">
-                </label>
-            </div>
-
-            <div class="userinput">
-                <label>
-                    Password again
-                    <input type="password" name="password" id="pass">
-                </label>
-            </div>
-
-            <button type="submit" formaction="youMadeAnAccount.html">
-                Make account
-            </button>
-
-            <p class="alreadyHasAccount">
-                Have an account?
-                <a href="login.html">
-                       Sign In
-                </a>
-            </p>
-          </form>
+        </form>
     </main>
 
     <footer>
         <div class="contactInfo">
-        <h3>
+          <h3>
             Contact
-        </h3>
+          </h3>
           <a href="mailto:johansson.axel@elev.ga.ntig.se">
           
               johansson.axel@elev.ga.ntig.se
@@ -124,6 +94,5 @@
           Axel Johansson
         </p>
       </footer>
-    
 </body>
 </html>
