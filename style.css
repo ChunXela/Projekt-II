@@ -220,18 +220,37 @@ a {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   min-height: 100%;
 }
 
 .loginform{
+  margin: 10vh;
   background: white;
+  align-items: center;
   border: 2px solid black;
-  width: 100rem;
-  height:10rem;
-
+  width: max-content;
+  height: 15rem;
+  width: 25rem;
 }
 
+.loginform .userinput{
+  margin-right: 10vh;
+}
+
+.loginform h1{
+text-align: center;
+}
+
+.button{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.doesntAlreadyHaveAccount{
+  text-align: center;
+  margin: 2rem;
+}
 /* make an account */
 
 .makeAccount{
@@ -255,18 +274,20 @@ a {
   margin-top: 1rem;
 }
 
-label {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
+
 
 .userinput{
 margin-top: 2rem;
 
 }
 
-button{
+.userinput label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.makeAccountBox button{
   margin-top: 1rem;
 }
 

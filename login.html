@@ -46,9 +46,9 @@
           </a>
         </li>
         <li class="nav_tabs">
-          <a href="makeanaccount.html">
+          <a href="login.html">
             <p class="nav_names">
-              Make an account
+              Log In
             </p>
           </a>
         </li>
@@ -65,15 +65,36 @@
     </nav>
 
     <main class="login">
-        <form class="loginform">
-            <div class="loginBox">
-                <label for="Username">
-                    <input type="text">
-                </label>
-                <label for="password">
+        <form class="loginform"> 
+         <h1>
+           Log In
+         </h1>
+          <div class="userinput">
+            <label for="Username" class="username">
+              Username
+                <input type="text">
+            </label>
+          </div>
+          <div class="userinput">
+            <label for="password" class="password">
+              Password
                     <input type="password">
                 </label>
-            </div>
+          </div>
+
+          
+          <div class="button">
+            <button type="submit" formaction="index.html">
+              Log In
+            </button>
+          </div>
+                
+        <p class="doesntAlreadyHaveAccount">
+          Dont't have an account?
+          <a href="makeanaccount.html">
+                 Sign In
+          </a>
+      </p>
 
         </form>
     </main>
