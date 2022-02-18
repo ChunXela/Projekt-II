@@ -2,8 +2,13 @@
 margin: 0;
 padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
-}
+  font-family: "Poppins"; }
+
+   * a, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+  }
+
 
 body{
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
@@ -93,20 +98,19 @@ a {
 
   /* Main area */
 
-  main {
+  .homePage {
     display: flex;
-    flex-wrap: wrap;  
     justify-content: space-around;
+    flex-wrap: wrap;  
     padding: 2vh;
     background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
     min-height: 100%;
   }
-  a, a:focus, a:active{
-    text-decoration: none;
-    color: inherit;
-  }
+
   
   /* box styling */
+
+ 
 
   .postArea{
     display: flex;
@@ -118,8 +122,6 @@ a {
   .box {
     margin: 25px;
     z-index: -1;
-    /*width: 12rem;
-    height:12.5rem;*/
     width: 300px;
     height: 300px;
     margin-top: 40px;
@@ -130,8 +132,6 @@ a {
   .nameofsomething {
     text-align: center;
     grid-row-start: 1;
-   /* width: 12rem;
-    height: 2.5rem;*/
     height: 38px;
     color: white;
     font-size: 25px;
@@ -140,9 +140,7 @@ a {
 
   
   .imageofsomething {
-    /*width: 11.9rem;
-    height: 10rem;*/
-  
+ 
     width: 298px;
     height: 225px;
     grid-row-start: 2;
@@ -183,16 +181,21 @@ a {
   }
   
 /* about page*/
+.aboutPage{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-around;
+
+ } 
 
 .randomImage{
-  display: flex;
-  width: 99.1vw;
+  width: 100%;
   height: 25rem;
   margin-top: -2.3rem;
 }
 
-
 .about{
+  
   width: 75vw;
   background: white;
   margin: 1rem;
@@ -214,7 +217,14 @@ a {
 /* login */
 
 .login{
-  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.loginform{
   background: white;
   border: 2px solid black;
   width: 100rem;
@@ -224,7 +234,15 @@ a {
 
 /* make an account */
 
+.makeAccount{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 100%;
+}
+
 .makeAccountBox{
+  align-items: center;
   margin: 8.39rem;
   border: 1px solid black;
   text-align: center;
@@ -241,7 +259,6 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  margin: 1rem;
 }
 
 .userinput{
@@ -250,7 +267,7 @@ margin-top: 2rem;
 }
 
 button{
-  margin-top: 0.1rem;
+  margin-top: 1rem;
 }
 
 
@@ -261,6 +278,15 @@ margin: 5rem;
 }
 
 /* Support */
+
+.support{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100%;
+
+}
 
 .FAQ{
   text-align: center;
@@ -302,8 +328,14 @@ font-size: 25px;
 
 /* made an account */
 
-.YAY{
+.madeAccount{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100%;
+}
 
+.YAY{
   text-align: center;
   width: 90vw;
   height: 20rem;
@@ -324,13 +356,23 @@ margin-top: 14rem;
 
  /* footer styling */
  
- footer {
+.footerWithoutScroll {
  font-size: 24px;
  background-color: white;
  max-height: max-content;
  border-top: 2px solid #505050;
  Position: absolute;
+ bottom: 0;
  width: 100%;
+}
+
+.footerWithScroll{
+  font-size: 24px;
+  background-color: white;
+  max-height: max-content;
+  border-top: 2px solid #505050;
+  Position: absolute;
+  width: 100%;
 }
 
 .contactInfo{
