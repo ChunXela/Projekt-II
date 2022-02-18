@@ -106,14 +106,10 @@ a {
     color: inherit;
   }
   
-  .postArea{
-    display: flex;
-    
-    }
-
   /* box styling */
 
   .postArea{
+    display: flex;
     gap: 0px;
     position: sticky;
   }
@@ -140,6 +136,8 @@ a {
     color: white;
     font-size: 25px;
   }
+
+
   
   .imageofsomething {
     /*width: 11.9rem;
@@ -184,7 +182,146 @@ a {
     text-align: center;
   }
   
+/* about page*/
+
+.randomImage{
+  display: flex;
+  width: 99.1vw;
+  height: 25rem;
+  margin-top: -2.3rem;
+}
+
+
+.about{
+  width: 75vw;
+  background: white;
+  margin: 1rem;
+  border: 2px solid black;
   
+}
+
+.about h1{
+  text-align: center;
+}
+
+.about p{
+  margin-left: 10px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* login */
+
+.login{
+  text-align: center;
+  background: white;
+  border: 2px solid black;
+  width: 100rem;
+  height:10rem;
+
+}
+
+/* make an account */
+
+.makeAccountBox{
+  margin: 8.39rem;
+  border: 1px solid black;
+  text-align: center;
+  background: white;
+  height: 25rem;
+  width: 25rem;
+
+}
+.makeAccountBox h1{
+  margin-top: 1rem;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin: 1rem;
+}
+
+.userinput{
+margin-top: 2rem;
+
+}
+
+button{
+  margin-top: 0.1rem;
+}
+
+
+.alreadyHasAccount{
+text-align: center;
+margin: 5rem;
+
+}
+
+/* Support */
+
+.FAQ{
+  text-align: center;
+  margin: 1rem;
+  width: 90vw;
+  background: white;
+  border: 2px solid black;
+}
+
+.FAQ h1{
+  margin-top: 1rem;
+
+}
+
+.FAQ p{
+  margin: 20px;
+font-size: 25px;
+}
+
+.contactBox{
+  margin-top: 5em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+
+}
+
+.contactBox div{
+  font-size: 20px;
+  text-align: center;
+  background: white;
+  border: 2px solid black;
+  height: 5rem;
+  width: 44.5vw;
+
+}
+
+/* made an account */
+
+.YAY{
+
+  text-align: center;
+  width: 90vw;
+  height: 20rem;
+  background: white;
+  border: 3px solid black;
+  margin: 10rem;
+
+}
+
+.YAY h1{
+margin: 2rem;
+}
+
+.return{
+font-size: 20px;
+margin-top: 14rem;
+}
+
  /* footer styling */
  
  footer {
