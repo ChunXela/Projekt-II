@@ -54,6 +54,18 @@ a {
   color: inherit;
 }
 
+.makePost{
+  font-size: max(3vw,2vw);
+  border-radius: 2vh;
+  max-height: max-content;
+  position: absolute;
+  left: 90vw;
+  top: 10px;
+  bottom: 10px;
+}
+
+
+
 
 /* under header */
 
@@ -404,3 +416,9 @@ margin-top: 14rem;
 }
 
 /* */
+
+.text{
+  width: 5em;
+  height: 2em;
+  margin: 0 1em 1em 0;
+}
