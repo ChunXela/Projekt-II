@@ -195,7 +195,7 @@ a {
 }
 
 .about{
-  
+  margin: 2rem;
   width: 75vw;
   background: white;
   margin: rem;
@@ -344,6 +344,7 @@ font-size: 25px;
   border: 2px solid black;
   height: 5rem;
   width: 44.5vw;
+  margin-bottom: 6rem;
 
 }
 
