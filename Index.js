@@ -9,7 +9,7 @@ function AddNew(){
     const newDiv = document.createElement("div");
     console.log("Div");
     newDiv.classList.add("postArea");
-    DivContainer.appendChild(newDiv);
+    DivContainer.appendChild("newDiv");
 }
 /*
 function NewNav(){
