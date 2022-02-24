@@ -18,9 +18,14 @@ function AddNew(){
     newNav.append(newName);
     let name = document.createElement("h3");
     name.classList.add("nameofPost");
+    let nameText = document.createTextNode("name of something");
+    name.append(nameText);
     newName.append(name);
     document.getElementsByClassName("nameofPost").innerHTML = "name of something";
+    let img = document.createElement("img");
+    img.classList.add("imageofsomething");
+    img.setAttribute("src", "external-content.duckduckgo.com.jpg")
+    newNav.append(img);
 
     document.querySelector("main").prepend(newDiv);
-
 }
