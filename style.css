@@ -1,18 +1,19 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins"; }
+  font-family: "Poppins";
+}
 
-   * a, a:focus, a:active{
-    text-decoration: none;
-    color: inherit;
-  }
+* a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
-
-body{
+body {
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
-
 }
 
 /* header styling */
@@ -54,8 +55,8 @@ a {
   color: inherit;
 }
 
-.makePost{
-  font-size: max(3vw,2vw);
+.makePost {
+  font-size: max(3vw, 2vw);
   border-radius: 2vh;
   max-height: max-content;
   position: absolute;
@@ -64,12 +65,9 @@ a {
   bottom: 10px;
 }
 
-
-
-
 /* under header */
 
-.nav_under_header{
+.nav_under_header {
   text-align: center;
   position: sticky;
   top: 0px;
@@ -78,14 +76,14 @@ a {
   z-index: 1;
 }
 
-.content_in_nav{
+.content_in_nav {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   padding: 0px 10px;
 }
 
-.nav_tabs{
+.nav_tabs {
   flex-grow: 1;
   list-style: none;
   border-right: 1px solid #c0c0c0;
@@ -94,203 +92,223 @@ a {
   margin: 10px 0px;
 }
 
-.nav_names{
+.nav_names {
   font-size: 25px;
 }
 /* shadow gradient under tabsd */
 
-.gradient{
+.gradient {
   background: linear-gradient(
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0.2) 40%,
     rgba(0, 0, 0, 0) 100%
-    );
-    height: 20px;
-  }
+  );
+  height: 20px;
+}
 
-  /* Main area */
+/* Main area */
 
-  .homePage {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;  
-    padding: 2vh;
-    background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
-    min-height: 66.7vh
-  }
-
-  
-  /* box styling */
-
- 
-
-  .postArea{
-    display: flex;
-    gap: 0px;
-    position: sticky;
-  }
-  
-  
-  .box {
-    margin: 25px;
-    z-index: -1;
-    width: 300px;
-    height: 300px;
-    margin-top: 40px;
-    background-color: #505050;
-    border: 1px solid black;
-  }
-  
-  .nameofsomething {
-    text-align: center;
-    grid-row-start: 1;
-    height: 38px;
-    color: white;
-    font-size: 25px;
-  }
-
-
-  
-  .imageofsomething {
- 
-    width: 298px;
-    height: 225px;
-    grid-row-start: 2;
-    grid-column-start: 1;
-    border-width: 1px solid;
-    color: white;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-
-  
-  
-  .infoofsomething {
-    grid-row-start: 3;
-    color: white;
-    font-size: 25px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .likebutton {
-    background-color: #505050;
-    width: 150px;
-    border-style: solid;
-    border-color: white;
-    border-width: 0 1px 0 0;
-    text-align: center;
-  }
-  
-  .favoritebutton {
-    background-color: #505050;
-    width: 148px;
-    border-style: solid;
-    border-width: 0 0 0 0;
-    border-color: white;
-    text-align: center;
-  }
-  
-/* about page*/
-.aboutPage{
+.homePage {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-    justify-content: space-around;
-
- } 
-
-.randomImage{
-  width: 100%;
-  height: 25rem;
-  margin-top: -2.3rem;
+  padding: 2vh;
+  background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+  min-height: 66.7vh;
 }
 
-.about{
-  margin: 2rem;
-  width: 75vw;
-  background: white;
-  margin: rem;
-  border: 2px solid black;
-  
+/* box styling */
+
+.postArea {
+  display: flex;
+  gap: 0px;
+  position: sticky;
 }
 
-.about h1{
+.box {
+  margin: 25px;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  background-color: #505050;
+  border: 1px solid black;
+}
+
+.nameofsomething {
+  text-align: center;
+  grid-row-start: 1;
+  height: 38px;
+  color: white;
+  font-size: 25px;
+}
+
+.imageofsomething {
+  width: 298px;
+  height: 225px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  border-width: 1px solid;
+  color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.infoofsomething {
+  grid-row-start: 3;
+  color: white;
+  font-size: 25px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.likebutton {
+  background-color: #505050;
+  width: 150px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 1px 0 0;
   text-align: center;
 }
 
-.about p{
-  margin-left: 10px;
-  text-align: left;
+.favoritebutton {
+  background-color: #505050;
+  width: 148px;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: white;
+  text-align: center;
+}
+
+/* about page*/
+.aboutPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.randomImage {
+  width: 40rem;
+  height: 25rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+}
+
+
+.whoAmI {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 40rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 52%, rgba(0,0,0,1) 100%); 
+  border: 2px solid black;
+  justify-content: center;
+}
+
+.whatIsMakerverse {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;  
+  width: 40rem;
+  color: white;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 52%, rgba(0,0,0,1) 100%); 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  justify-content: center;
+}
+
+.whoAmI h1 {
+  text-align: center;
+  text-decoration: none;
+}
+
+.whatIsMakerverse h1 {
+  text-align: center;
+  text-decoration: none;
+}
+
+.whoAmI p {
+  font-weight: 900;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.whatIsMakerverse p {
+  font-weight: 900;
+  margin: 10px;
+  text-align: center;
   text-decoration: none;
   font-size: 20px;
 }
 
 /* login */
 
-.login{
-
+.login {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   min-height: 100%;
 }
 
-.loginform{
+.loginform {
   margin: 10vh;
   background: white;
   align-items: center;
   border: 2px solid black;
   width: max-content;
-  height: 15rem;
   width: 25rem;
 }
 
-.loginform .userinput{
+.loginform .userinput {
   margin-right: 10vh;
 }
 
-.loginform h1{
-text-align: center;
+.loginform h1 {
+  text-align: center;
 }
 
-.button{
+.button {
   text-align: center;
   margin-top: 1rem;
 }
 
-.doesntAlreadyHaveAccount{
+.doesntAlreadyHaveAccount {
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
 }
 /* make an account */
 
-.makeAccount{
+.makeAccount {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   min-height: 100%;
 }
 
-.makeAccountBox{
+.makeAccountBox {
   align-items: center;
   margin: 8.39rem;
   border: 1px solid black;
   text-align: center;
   background: white;
-  height: 25rem;
+  height: max-content;
   width: 25rem;
-
 }
-.makeAccountBox h1{
+.makeAccountBox h1 {
   margin-top: 1rem;
 }
 
-
-
-.userinput{
-margin-top: 2rem;
-
+.userinput {
+  margin-top: 2rem;
+  font-size: 24px;
 }
 
 .userinput label {
@@ -299,29 +317,25 @@ margin-top: 2rem;
   place-items: center;
 }
 
-.makeAccountBox button{
+.makeAccountBox button {
   margin-top: 1rem;
 }
 
-
-.alreadyHasAccount{
-text-align: center;
-margin: 5rem;
-
+.alreadyHasAccount {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 /* Support */
 
-.support{
-
+.support {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100%;
-
 }
 
-.FAQ{
+.FAQ {
   text-align: center;
   margin: 1rem;
   width: 90vw;
@@ -329,27 +343,24 @@ margin: 5rem;
   border: 2px solid black;
 }
 
-.FAQ h1{
+.FAQ h1 {
   margin-top: 1rem;
-
 }
 
-.FAQ p{
+.FAQ p {
   margin: 20px;
-font-size: 25px;
+  font-size: 25px;
 }
 
-.contactBox{
+.contactBox {
   margin-top: 5em;
   margin-left: 1em;
   display: flex;
   flex-direction: row;
   gap: 20px;
-  
-
 }
 
-.contactBox div{
+.contactBox div {
   font-size: 20px;
   text-align: center;
   background: white;
@@ -357,68 +368,68 @@ font-size: 25px;
   height: 5rem;
   width: 44.5vw;
   margin-bottom: 6rem;
-
 }
 
 /* made an account */
 
-.madeAccount{
+.madeAccount {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100%;
 }
 
-.YAY{
+.YAY {
   text-align: center;
   width: 90vw;
   height: 20rem;
   background: white;
   border: 3px solid black;
   margin: 10rem;
-
 }
 
-.YAY h1{
-margin: 2rem;
+.YAY h1 {
+  margin: 2rem;
 }
 
-.return{
-font-size: 20px;
-margin-top: 14rem;
+.return {
+  font-size: 20px;
+  margin-top: 14rem;
 }
 
- /* footer styling */
- 
+/* footer styling */
+
 .footerWithoutScroll {
- font-size: 24px;
- background-color: white;
- max-height: max-content;
- border-top: 2px solid #505050;
- Position: absolute;
- bottom: 0;
- width: 100%;
-}
-
-.footerWithScroll{
   font-size: 24px;
   background-color: white;
   max-height: max-content;
   border-top: 2px solid #505050;
-  Position: absolute;
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  
 }
 
-.contactInfo{
+.footerWithScroll {
+  font-size: 24px;
+  background-color: white;
+  max-height: max-content;
+  border-top: 2px solid #505050;
+  position: absolute;
+  width: 100%;
+  height: 11.5%;
+}
+
+.contactInfo {
   text-align: center;
 }
-.copyrightHolder{
+.copyrightHolder {
   text-align: end;
 }
 
 /* */
 
-.text{
+.text {
   width: 5em;
   height: 2em;
   margin: 0 1em 1em 0;
