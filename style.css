@@ -191,7 +191,7 @@ a {
 
 .randomImage {
   width: 40rem;
-  height: 25rem;
+height: 25rem;
   margin-top: 1rem;
   border: 2px solid black;
 }
@@ -200,12 +200,12 @@ a {
 .whoAmI {
   display: flex;
   flex-direction: column;
-  height: 25rem;
   width: 40rem;
+  height: 25rem;
   color: white;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 52%, rgba(0,0,0,1) 100%); 
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 50%, rgba(0,0,0,1) 100%);  
   border: 2px solid black;
   justify-content: center;
 }
@@ -213,11 +213,11 @@ a {
 .whatIsMakerverse {
   display: flex;
   flex-direction: column;
-  height: 25rem;  
   width: 40rem;
+height: 25rem;
   color: white;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 52%, rgba(0,0,0,1) 100%); 
-  margin-top: 1rem;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 50%, rgba(0,0,0,1) 100%); 
+   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 2px solid black;
   justify-content: center;
