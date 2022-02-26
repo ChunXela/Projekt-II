@@ -95,6 +95,12 @@ a {
 .nav_names {
   font-size: 25px;
 }
+
+#currentPage{
+
+  color: gray;
+}
+
 /* shadow gradient under tabsd */
 
 .gradient {
@@ -254,6 +260,7 @@ height: 25rem;
 .login {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   min-height: 100%;
 }
@@ -261,7 +268,7 @@ height: 25rem;
 .loginform {
   margin: 10vh;
   background: white;
-  align-items: center;
+  justify-content: center;
   border: 2px solid black;
   width: max-content;
   width: 25rem;
@@ -284,6 +291,35 @@ height: 25rem;
   text-align: center;
   margin-top: 2rem;
 }
+
+.weirdBox1{
+  width: 10rem;
+  justify-content: left;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 50%, rgba(0,0,0,1) 100%);
+  border: 2px solid darkred;
+  color: darkred;
+}
+
+.weirdBox1 p{
+  text-align: center;
+  margin: 1rem;
+  font-size: 50px;
+}
+
+.weirdBox2{
+  width: 10rem;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(107,0,152,1) 50%, rgba(0,0,0,1) 100%);
+  border: 2px solid darkred;
+  color: darkred;
+}
+
+.weirdBox2 p{
+  text-align: center;
+  margin: 1rem;
+  font-size: 50px;
+  margin-top: 3rem;
+}
+
 /* make an account */
 
 .makeAccount {
@@ -434,3 +470,5 @@ height: 25rem;
   height: 2em;
   margin: 0 1em 1em 0;
 }
+
+
