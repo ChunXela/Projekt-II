@@ -3,7 +3,6 @@ const DivContainer = document.querySelector(".homePage");
 const NavContainer = document.querySelector(".postArea");
 
 BtnAdd.addEventListener("click", AddNew);
-
 function AddNew() {
   let newDiv = document.createElement("div");
   newDiv.classList.add("postArea");

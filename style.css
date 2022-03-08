@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +147,7 @@ a {
   grid-row-start: 1;
   height: 38px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .imageOfSomething {
@@ -249,7 +251,7 @@ a {
 
 .whoAmI p {
   font-weight: 900;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -257,7 +259,7 @@ a {
 
 .whatIsMakerverse p {
   font-weight: 900;
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -280,6 +282,7 @@ a {
   border: 2px solid black;
   width: max-content;
   width: 25rem;
+  height: 20rem
 }
 
 .loginForm .userInput {
@@ -311,6 +314,8 @@ a {
   );
   border: 2px solid darkred;
   color: darkred;
+  margin-bottom: 5rem;
+  height: 45rem;
 }
 
 .weirdBox1 p {
@@ -329,13 +334,14 @@ a {
   );
   border: 2px solid darkred;
   color: darkred;
+  height: 45rem;
 }
 
 .weirdBox2 p {
   text-align: center;
   margin: 1rem;
   font-size: 50px;
-  margin-top: 3rem;
+ margin-top: 4rem;
 }
 
 /* make an account */
@@ -385,9 +391,97 @@ a {
 .support {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   min-height: 100%;
 }
+
+.helloWorld{
+ text-align: center;
+
+}
+#SOS{
+  margin: 2rem;
+  width: 50vw;
+  font-size: 20px;
+  height: max-content;
+}
+
+.downYouGo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.howCanOneHelp{
+  color: white;
+  font-weight: 1000;
+}
+
+.howCanOneHelp p{
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.helpUser{
+  display: inline-block;
+  position: relative;
+  background: white;
+  margin: 1rem;
+  height: max-content;
+  width: 30rem;
+  font-size: 25px;
+  border: 2px solid black;
+}
+
+.helpUserClicked{
+  display: none;
+width: 30rem;
+background: white;
+border: 2px solid black;
+padding-left: 2rem;
+
+}
+
+.dropDownBtn{
+  margin-left: 27rem;
+  background: none;
+}
+
+.active, .dropDownBtn:hover {
+  background-color: #ccc;
+}
+
+.dropDownBtnImg{
+  width: 20px;
+  height: 10px;
+}
+
+.dropDownBtn:hover .helpUserClicked{
+  display: block;
+}
+
+.topHelpUserP{
+  color:black;
+  margin-left:1rem;
+}
+
+.helpUser:hover{
+  border: 4px solid black;
+}
+
+.helpUserImg{
+  width: 250px;
+  height: 250px;
+  margin-left: 1rem;
+}
+
+.underHelpUserP{
+  margin: 0 1rem 0 1rem; 
+  color: gray;
+}
+
 
 .FAQ {
   text-align: center;
@@ -464,11 +558,12 @@ a {
 }
 
 .footerWithScroll {
+  margin-top: 1rem;
   font-size: 24px;
   background-color: white;
   max-height: max-content;
   border-top: 2px solid #505050;
-  position: absolute;
+  position: 0;
   width: 100%;
   height: 11.5%;
 }
