@@ -199,7 +199,7 @@ justify-content: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%
 }
 
@@ -531,26 +531,28 @@ padding-left: 2rem;
 .madeAccount {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-content: center;
   min-height: 100%;
+  flex-direction: column;
 }
 
 .YAY {
+
   text-align: center;
   width: 90vw;
   height: 20rem;
   background: white;
   border: 3px solid black;
-  margin: 10rem;
 }
 
 .YAY h1 {
   margin: 2rem;
+  font-size: 29px;
+
 }
 
 .return {
   font-size: 20px;
-  margin-top: 14rem;
 }
 
 /* footer styling */

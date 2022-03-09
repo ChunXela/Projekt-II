@@ -26,7 +26,7 @@ function AddNew() {
   name.append(nameText);
   newName.append(name);
 
-  var postImage = ["1.jpg", "2.jpg", "3.jpg" , "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg","11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg",];
+  var postImage = ["/Images/1.jpg", "/Images/2.jpg", "/Images/3.jpg" , "/Images/4.jpg", "/Images/5.jpg", "/Images/6.jpg", "/Images/7.jpg", "/Images/8.jpg", "/Images/9.jpg", "/Images/10.jpg","/Images/11.jpg", "/Images/12.jpg", "/Images/13.jpg", "/Images/14.jpg", "/Images/15.jpg", "/Images/16.jpg", "/Images/17.jpg",];
 
   document.getElementsByClassName("nameOfPost").innerHTML = "name of something";
   let img = document.createElement("img");
