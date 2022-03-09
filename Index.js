@@ -18,16 +18,20 @@ function AddNew() {
   newName.classList.add("nameOfSomething");
   newNav.append(newName);
 
+  var postName = ["Name of something", "Name something of", "Something name of", "something of name", "Of name something", "Of something name"];
+
   let name = document.createElement("h3");
   name.classList.add("nameOfPost");
-  let nameText = document.createTextNode("name of something");
+  let nameText = document.createTextNode(postName[Math.floor(Math.random()*6)]);
   name.append(nameText);
   newName.append(name);
+
+  var postImage = ["1.jpg", "2.jpg", "3.jpg" , "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg","11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg",];
 
   document.getElementsByClassName("nameOfPost").innerHTML = "name of something";
   let img = document.createElement("img");
   img.classList.add("imageOfSomething");
-  img.setAttribute("src", "2.jpg");
+  img.setAttribute("src", postImage[Math.floor(Math.random()* 17)]);
   newNav.append(img);
 
   let reactionBox = document.createElement("div");
