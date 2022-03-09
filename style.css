@@ -194,6 +194,8 @@ justify-content: center;
 }
 
 /* about page*/
+
+
 .aboutPage {
   display: flex;
   flex-wrap: wrap;
@@ -202,8 +204,8 @@ justify-content: center;
 }
 
 .randomImage {
-  width: 45rem;
-  height: 30rem;
+  width: 340px;
+  height: 25rem;
   margin-top: 1rem;
   border: 2px solid black;
 }
@@ -211,8 +213,8 @@ justify-content: center;
 .whoAmI {
   display: flex;
   flex-direction: column;
-  width: 45rem;
-  height: 30rem;
+  width: 340px;
+  height: 25rem;
   color: white;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -229,8 +231,8 @@ justify-content: center;
 .whatIsMakerverse {
   display: flex;
   flex-direction: column;
-  width: 45rem;
-  height: 30rem;
+  width: 340px;
+  height: 25rem;
   color: white;
   background: linear-gradient(
     90deg,
@@ -259,7 +261,7 @@ justify-content: center;
   margin: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .whatIsMakerverse p {
@@ -267,7 +269,7 @@ justify-content: center;
   margin: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 /* login */
