@@ -175,13 +175,22 @@ justify-content: center;
   grid-template-columns: 1fr 1fr;
 }
 
+.likeImage{
+  height: 18px;
+  width: 18px;
+  z-index: 10;
+}
+
 .likeButton {
+  z-index: 9;
   background-color: #505050;
+  color: white;
   width: 150px;
   border-style: solid;
   border-color: white;
   border-width: 0 1px 0 0;
   text-align: center;
+  font-size: 18px;
 }
 
 .favoriteButton {
@@ -191,6 +200,8 @@ justify-content: center;
   border-width: 0 0 0 0;
   border-color: white;
   text-align: center;
+  font-size: 18px;
+
 }
 
 /* about page*/
@@ -261,7 +272,7 @@ justify-content: center;
   margin: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .whatIsMakerverse p {
@@ -269,7 +280,7 @@ justify-content: center;
   margin: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /* login */

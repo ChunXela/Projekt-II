@@ -26,7 +26,7 @@ function AddNew() {
   name.append(nameText);
   newName.append(name);
 
-  var postImage = ["/Images/1.jpg", "/Images/2.jpg", "/Images/3.jpg" , "/Images/4.jpg", "/Images/5.jpg", "/Images/6.jpg", "/Images/7.jpg", "/Images/8.jpg", "/Images/9.jpg", "/Images/10.jpg","/Images/11.jpg", "/Images/12.jpg", "/Images/13.jpg", "/Images/14.jpg", "/Images/15.jpg", "/Images/16.jpg", "/Images/17.jpg",];
+  var postImage = ["Images/1.jpg", "Images/2.jpg", "Images/3.jpg" , "Images/4.jpg", "Images/5.jpg", "Images/6.jpg", "Images/7.jpg", "Images/8.jpg", "Images/9.jpg", "Images/10.jpg","Images/11.jpg", "Images/12.jpg", "Images/13.jpg", "Images/14.jpg", "Images/15.jpg", "Images/16.jpg", "Images/17.jpg",];
 
   document.getElementsByClassName("nameOfPost").innerHTML = "name of something";
   let img = document.createElement("img");
@@ -38,11 +38,17 @@ function AddNew() {
   reactionBox.classList.add("infoOfSomething");
   newNav.append(reactionBox);
 
-  let like = document.createElement("nav");
+  var postLiked = ["Images/noReaction.png", "Images/reaction.png",];
+
+  let like = document.createElement("Button");
   like.classList.add("likeButton");
-  let likeText = document.createTextNode("Like");
-  like.append(likeText);
+  like.setAttribute("onclick", "likeEffect()")
+  let likeImg = document.createElement("img");
+  likeImg.classList.add("likeImage");
+  likeImg.setAttribute("src", postLiked[Math.floor(Math.random()*2)]);
+  like.append(likeImg);
   reactionBox.append(like);
+
 
   let favorite = document.createElement("nav");
   favorite.classList.add("favoriteButton");
