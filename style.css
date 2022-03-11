@@ -166,6 +166,8 @@ justify-content: center;
   border-bottom: 1px solid black;
 }
 
+.imageOfSomething2{}
+
 .infoOfSomething {
   grid-row-start: 3;
   color: white;
@@ -179,6 +181,10 @@ justify-content: center;
   height: 18px;
   width: 18px;
   z-index: 10;
+}
+
+.likeImage2{
+  
 }
 
 .likeButton {
