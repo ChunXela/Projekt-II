@@ -2,7 +2,31 @@ const BtnAdd = document.querySelector(".makePost");
 const DivContainer = document.querySelector(".homePage");
 const NavContainer = document.querySelector(".postArea");
 
-BtnAdd.addEventListener("click", AddNew);
+BtnAdd.addEventListener("click", AddNew); 
+
+function blablabla(){
+
+  var love = document.getElementsByClassName("likeButton");
+  var e;
+
+for (e = 0; e < love.length; e++) {
+love[ie].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var likeImg = this.nextElementSibling;
+  var likeImg2 = this.nextElementSibling;
+  if (likeImg.style.display === "block") {
+    likeImg.style.display = "none";
+    likeImg2.style.display = "block";
+  } else {
+    likeImg.style.display = "block";
+    likeImg2.style.display = "none";
+  }
+});
+} 
+
+}
+
+
 function AddNew() {
   let newDiv = document.createElement("div");
   newDiv.classList.add("postArea");
@@ -35,24 +59,27 @@ function AddNew() {
   img.setAttribute("src", postImage[Math.floor(Math.random()* 17)]);
   newNav.append(img);
 
-  let img2 = document.createElement("img");
-  img2.classList.add("imgOfSomething");
-  img2.setAttribute("src")
+  
 
   let reactionBox = document.createElement("div");
   reactionBox.classList.add("infoOfSomething");
-  newNav.append(reactionBox);
-
-  let like = document.createElement("nav");
+  newNav.append(reactionBox); 
+  
+ 
+  let like = document.createElement("button");
   like.classList.add("likeButton");
-  let likeText = document.createTextNode("Like");
-  like.append(likeText);
+  like.setAttribute("onclick", "blablabla");
   reactionBox.append(like);
 
-  let img2 = document.createElement("img");
-  img2.classList.add("imgOfSomething");
-  img2.setAttribute("src");
-  reactionBox.append(img2);
+  let likeImg = document.createElement("img");
+  likeImg.classList.add("likeImage");
+  likeImg.setAttribute("src", "Images/noReaction.png");
+  like.append(likeImg);
+
+  let likeImg2 = document.createElement("img");
+  likeImg2.classList.add("likeImage2");
+  likeImg2.setAttribute("src", "Images/reaction.png");
+  like.append(likeImg2);
 
 
   let favorite = document.createElement("nav");
@@ -62,4 +89,7 @@ function AddNew() {
   reactionBox.append(favorite);
 
   document.querySelector("main").prepend(newDiv);
+  
+ 
 }
+
