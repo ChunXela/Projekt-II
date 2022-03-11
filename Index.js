@@ -10,16 +10,32 @@ function blablabla(){
   var e;
 
 for (e = 0; e < love.length; e++) {
-love[ie].addEventListener("click", function() {
+love[e].addEventListener("click", function() {
   this.classList.toggle("active");
-  var likeImg = this.nextElementSibling;
-  var likeImg2 = this.nextElementSibling;
-  if (likeImg.style.display === "block") {
-    likeImg.style.display = "none";
-    likeImg2.style.display = "block";
+  var likeButtonClicked = this.nextElementSibling;
+  if (likeButtonClicked.style.display === "block") {
+    likeButtonClicked.style.display = "none";
   } else {
-    likeImg.style.display = "block";
-    likeImg2.style.display = "none";
+    likeButtonClicked.style.display = "block";
+  }
+});
+} 
+
+}
+
+function blablabla2(){
+
+  var love = document.getElementsByClassName("likeButtonClicked");
+  var e;
+
+for (e = 0; e < love.length; e++) {
+love[e].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var likeButton = this.previousElementSibling;
+  if (likeButton.style.display === "block") {
+    likeButton.style.display = "none";
+  } else {
+    likeButton.style.display = "block";
   }
 });
 } 
@@ -59,7 +75,6 @@ function AddNew() {
   img.setAttribute("src", postImage[Math.floor(Math.random()* 17)]);
   newNav.append(img);
 
-  
 
   let reactionBox = document.createElement("div");
   reactionBox.classList.add("infoOfSomething");
@@ -68,8 +83,15 @@ function AddNew() {
  
   let like = document.createElement("button");
   like.classList.add("likeButton");
-  like.setAttribute("onclick", "blablabla");
+  like.setAttribute("onclick", "blablabla()");
   reactionBox.append(like);
+
+  let likeClicked = document.createElement("button");
+  likeClicked.classList.add("likeButtonClicked");
+  likeClicked.setAttribute("onclick", "blablabla2()");
+  reactionBox.append(likeClicked);
+
+
 
   let likeImg = document.createElement("img");
   likeImg.classList.add("likeImage");
@@ -79,7 +101,7 @@ function AddNew() {
   let likeImg2 = document.createElement("img");
   likeImg2.classList.add("likeImage2");
   likeImg2.setAttribute("src", "Images/reaction.png");
-  like.append(likeImg2);
+  likeClicked.append(likeImg2);
 
 
   let favorite = document.createElement("nav");
