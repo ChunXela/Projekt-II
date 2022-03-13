@@ -42,7 +42,6 @@ love[e].addEventListener("click", function() {
 
 }
 
-
 function AddNew() {
   let newDiv = document.createElement("div");
   newDiv.classList.add("postArea");
@@ -73,7 +72,7 @@ function AddNew() {
   let img = document.createElement("img");
   img.classList.add("imageOfSomething");
   img.setAttribute("src", postImage[Math.floor(Math.random()* 17)]);
-  img.setAttribute("alt", "image of the post")
+  img.setAttribute("alt", "The image that shows what the post is :)")
   newNav.append(img);
 
 

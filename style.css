@@ -16,6 +16,8 @@ a:active {
 
 body {
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 /* header styling */
@@ -134,7 +136,17 @@ justify-content: center;
 .postArea {
   display: flex;
   gap: 0rem;
-  position: sticky;
+  opacity: 0;
+  overflow: hidden;
+  transition: 1s;
+  max-height: 0;
+}
+
+.postArea.visible{
+  z-index: 100;
+  opacity: 1;
+  max-height: max-content;
+  max-width: max-content;
 }
 
 .box {
