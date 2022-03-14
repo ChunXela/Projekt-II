@@ -136,10 +136,8 @@ justify-content: center;
 .postArea {
   display: flex;
   gap: 0rem;
-  opacity: 0;
   overflow: hidden;
   transition: 1s;
-  max-height: 0;
 }
 
 .postArea.visible{
