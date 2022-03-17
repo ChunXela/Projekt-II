@@ -4,40 +4,6 @@ const NavContainer = document.querySelector(".postArea");
 
 BtnAdd.addEventListener("click", AddNew);
 
-function blablabla() {
-  var love = document.getElementsByClassName("likeButton");
-  var e;
-
-  for (e = 0; e < love.length; e++) {
-    love[e].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var likeButtonClicked = this.nextElementSibling;
-      if (likeButtonClicked.style.display === "block") {
-        likeButtonClicked.style.display = "none";
-      } else {
-        likeButtonClicked.style.display = "block";
-      }
-    });
-  }
-}
-
-function blablabla2() {
-  var love = document.getElementsByClassName("likeButtonClicked");
-  var e;
-
-  for (e = 0; e < love.length; e++) {
-    love[e].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var likeButton = this.previousElementSibling;
-      if (likeButton.style.display === "block") {
-        likeButton.style.display = "none";
-      } else {
-        likeButton.style.display = "block";
-      }
-    });
-  }
-}
-
 function AddNew() {
   let newDiv = document.createElement("div");
   newDiv.classList.add("postArea Reveal");
@@ -71,30 +37,29 @@ function AddNew() {
   newName.append(name);
 
   var postImage = [
-    "Images/1.jpg",
-    "Images/2.jpg",
-    "Images/3.jpg",
-    "Images/4.jpg",
-    "Images/5.jpg",
-    "Images/6.jpg",
-    "Images/7.jpg",
-    "Images/8.jpg",
-    "Images/9.jpg",
-    "Images/10.jpg",
-    "Images/11.jpg",
-    "Images/12.jpg",
-    "Images/13.jpg",
-    "Images/14.jpg",
-    "Images/15.jpg",
-    "Images/16.jpg",
-    "Images/17.jpg",
+    "./Images/1.jpg",
+    "./Images/2.jpg",
+    "./Images/3.jpg",
+    "./Images/4.jpg",
+    "./Images/5.jpg",
+    "./Images/7.jpg",
+    "./Images/8.jpg",
+    "./Images/9.jpg",
+    "./Images/10.jpg",
+    "./Images/11.jpg",
+    "./Images/12.jpg",
+    "./Images/13.jpg",
+    "./Images/14.jpg",
+    "./Images/15.jpg",
+    "./Images/16.jpg",
+    "./Images/17.jpg",
   ];
 
   document.getElementsByClassName("nameOfPost").innerHTML = "name of something";
 
   let img = document.createElement("img");
   img.classList.add("imageOfSomething");
-  img.setAttribute("src", postImage[Math.floor(Math.random() * 17)]);
+  img.setAttribute("src", postImage[Math.floor(Math.random() * 16)]);
   img.setAttribute("alt", "The image that shows what the post is :)");
   newNav.append(img);
 
@@ -102,29 +67,27 @@ function AddNew() {
   reactionBox.classList.add("infoOfSomething");
   newNav.append(reactionBox);
 
-  let like = document.createElement("button");
-  like.classList.add("likeButton");
-  like.setAttribute("onclick", "blablabla()");
-  reactionBox.append(like);
-
-  let likeClicked = document.createElement("button");
-  likeClicked.classList.add("likeButtonClicked");
-  likeClicked.setAttribute("onclick", "blablabla2()");
-  reactionBox.append(likeClicked);
-
   let likeImg = document.createElement("img");
   likeImg.classList.add("likeImage");
   likeImg.setAttribute("src", "Images/noReaction.png");
-  like.append(likeImg);
-
-  let likeImg2 = document.createElement("img");
-  likeImg2.classList.add("likeImage2");
-  likeImg2.setAttribute("src", "Images/reaction.png");
-  likeClicked.append(likeImg2);
+  likeImg.setAttribute("alt", "Not Liked");
+  likeImg.setAttribute("data-active", "false");
+  likeImg.addEventListener("click", (e) => {
+    if (likeImg.getAttribute("data-active") === "true") {
+      likeImg.setAttribute("data-active", "false");
+      likeImg.setAttribute("src", "Images/noReaction.png");
+      likeImg.setAttribute("alt", "Not Liked");
+    } else {
+      likeImg.setAttribute("data-active", "true");
+      likeImg.setAttribute("src", "./Images/reaction.png");
+      likeImg.setAttribute("alt", "Liked");
+    }
+  });
+  reactionBox.append(likeImg);
 
   let favorite = document.createElement("nav");
-  favorite.classList.add("favoriteButton");
-  let favoriteText = document.createTextNode("favorite");
+  favorite.classList.add("shareButton");
+  let favoriteText = document.createTextNode("Share");
   favorite.append(favoriteText);
   reactionBox.append(favorite);
 

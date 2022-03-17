@@ -16,7 +16,7 @@ a:active {
 
 body {
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
 }
 
@@ -140,7 +140,6 @@ a {
 }
 
 .postArea.visible {
-  z-index: 100;
   opacity: 1;
   max-height: max-content;
   max-width: max-content;
@@ -182,61 +181,29 @@ a {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 .likeImage {
   display: block;
-  height: 1.125rem;
-  width: 1.125rem;
-  z-index: 10;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  margin-top: 0.125rem;
+  margin-left: 3.75rem;
 }
 
 .likeImage2 {
   display: block;
-  height: 1.125rem;
-  width: 1.125rem;
-  z-index: 10;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  margin-left: 1.25rem;
 }
 
-.likeButton {
-  display: none;
-  z-index: 9;
-  background-color: #505050;
-  color: white;
-  width: 9.375rem;
-  border-style: solid;
-  border-color: white;
-  border-width: 0 0.0625rem 0 0;
-  text-align: center;
-  font-size: 1.125rem;
-}
-
-.likeButtonClicked {
-  display: block;
-  z-index: 9;
-  background-color: #505050;
-  color: white;
-  width: 9.375rem;
-  border-style: solid;
-  border-color: white;
-  border-width: 0 0.0625rem 0 0;
-  text-align: center;
-  font-size: 1.125rem;
-}
-
-.active,
-.likeButton:hover,
-.likeButtonClicked:hover {
-  background-color: #ccc;
-}
-
-.favoriteButton {
+.shareButton {
   display: block;
   background-color: #505050;
   width: 9.25rem;
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: white;
+  border-left: 0.0625rem solid white;
   text-align: center;
   font-size: 1.125rem;
 }
@@ -340,8 +307,8 @@ a {
   height: 20rem;
 }
 
-.loginForm .userInput {
-  margin-right: 10vh;
+.loginForm .userInput label {
+  gap: 0.5rem;
 }
 
 .loginForm h1 {

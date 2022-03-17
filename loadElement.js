@@ -1,1 +1,1 @@
-ScrollReveal().reveal(".postArea", { delay: 500, origin: "left" });
+document.querySelector("body").style.opacity = 1;
