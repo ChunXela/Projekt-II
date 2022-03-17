@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -27,7 +27,7 @@ header {
   padding: 1rem;
   text-align: center;
   position: relative;
-  border-bottom: .0625rem solid #c0c0c0;
+  border-bottom: 0.0625rem solid #c0c0c0;
   z-index: 500;
   top: 0rem;
   left: 0rem;
@@ -39,8 +39,8 @@ header {
   height: max(6vw, 6vh);
   position: absolute;
   left: 1.25rem;
-  top: .625rem;
-  bottom: .625rem;
+  top: 0.625rem;
+  bottom: 0.625rem;
 }
 .minititle {
   text-align: center;
@@ -59,8 +59,6 @@ a {
   color: inherit;
 }
 
-
-
 /* under header */
 
 .navUnderHeader {
@@ -76,16 +74,16 @@ a {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  padding: 0rem .625rem;
+  padding: 0rem 0.625rem;
 }
 
 .navTabs {
   flex-grow: 1;
   list-style: none;
-  border-right: .0625rem solid #c0c0c0;
-  border-left: .0625rem solid #c0c0c0;
-  padding: 0rem .625rem;
-  margin: .625rem 0rem;
+  border-right: 0.0625rem solid #c0c0c0;
+  border-left: 0.0625rem solid #c0c0c0;
+  padding: 0rem 0.625rem;
+  margin: 0.625rem 0rem;
 }
 
 .navNames {
@@ -119,10 +117,10 @@ a {
   min-height: 66.7vh;
 }
 
-.temp{
-display: flex;
-flex-direction: row;
-justify-content: center;
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .makePost {
   font-size: 3.125rem;
@@ -136,13 +134,12 @@ justify-content: center;
 .postArea {
   display: flex;
   gap: 0rem;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   transition: 1s;
-  max-height: 0;
 }
 
-.postArea.visible{
+.postArea.visible {
   z-index: 100;
   opacity: 1;
   max-height: max-content;
@@ -156,7 +153,7 @@ justify-content: center;
   height: 18.75rem;
   margin-top: 2.5rem;
   background-color: #505050;
-  border: .0625rem solid black;
+  border: 0.0625rem solid black;
 }
 
 .nameOfSomething {
@@ -172,13 +169,11 @@ justify-content: center;
   height: 14.0625rem;
   grid-row-start: 2;
   grid-column-start: 1;
-  border-width: .0625rem solid;
+  border-width: 0.0625rem solid;
   color: white;
-  border-top: .0625rem solid black;
-  border-bottom: .0625rem solid black;
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
 }
-
-
 
 .infoOfSomething {
   grid-row-start: 3;
@@ -189,14 +184,14 @@ justify-content: center;
   grid-template-columns: 1fr 1fr;
 }
 
-.likeImage{
+.likeImage {
   display: block;
   height: 1.125rem;
   width: 1.125rem;
   z-index: 10;
 }
 
-.likeImage2{
+.likeImage2 {
   display: block;
   height: 1.125rem;
   width: 1.125rem;
@@ -211,12 +206,12 @@ justify-content: center;
   width: 9.375rem;
   border-style: solid;
   border-color: white;
-  border-width: 0 .0625rem 0 0;
+  border-width: 0 0.0625rem 0 0;
   text-align: center;
   font-size: 1.125rem;
 }
 
-.likeButtonClicked{
+.likeButtonClicked {
   display: block;
   z-index: 9;
   background-color: #505050;
@@ -224,13 +219,14 @@ justify-content: center;
   width: 9.375rem;
   border-style: solid;
   border-color: white;
-  border-width: 0 .0625rem 0 0;
+  border-width: 0 0.0625rem 0 0;
   text-align: center;
   font-size: 1.125rem;
-
 }
 
-.active, .likeButton:hover, .likeButtonClicked:hover {
+.active,
+.likeButton:hover,
+.likeButtonClicked:hover {
   background-color: #ccc;
 }
 
@@ -243,24 +239,23 @@ justify-content: center;
   border-color: white;
   text-align: center;
   font-size: 1.125rem;
-
 }
 
 /* about page*/
 
-.aboutPartOne{
+.aboutPartOne {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%
+  width: 100%;
 }
 
 .randomImage {
   width: 21.25rem;
   height: 25rem;
   margin-top: 1rem;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
 }
 
 .whoAmI {
@@ -277,7 +272,7 @@ justify-content: center;
     rgba(107, 0, 152, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   justify-content: center;
 }
 
@@ -295,7 +290,7 @@ justify-content: center;
   );
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   justify-content: center;
 }
 
@@ -339,10 +334,10 @@ justify-content: center;
   margin: 10vh;
   background: white;
   justify-content: center;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   width: max-content;
   width: 25rem;
-  height: 20rem
+  height: 20rem;
 }
 
 .loginForm .userInput {
@@ -372,7 +367,7 @@ justify-content: center;
     rgba(107, 0, 152, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: .125rem solid darkred;
+  border: 0.125rem solid darkred;
   color: darkred;
   margin-bottom: 5rem;
   height: 45rem;
@@ -392,7 +387,7 @@ justify-content: center;
     rgba(107, 0, 152, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
-  border: .125rem solid darkred;
+  border: 0.125rem solid darkred;
   color: darkred;
   height: 45rem;
 }
@@ -401,7 +396,7 @@ justify-content: center;
   text-align: center;
   margin: 1rem;
   font-size: 3.125rem;
- margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 /* make an account */
@@ -416,7 +411,7 @@ justify-content: center;
 .makeAccountBox {
   align-items: center;
   margin: 8.39rem;
-  border: .0625rem solid black;
+  border: 0.0625rem solid black;
   text-align: center;
   background: white;
   height: max-content;
@@ -454,38 +449,35 @@ justify-content: center;
   min-height: 100%;
 }
 
-.helloWorld{
- text-align: center;
-
+.helloWorld {
+  text-align: center;
 }
-#SOS{
+#SOS {
   margin: 2rem;
   width: 75vw;
   font-size: 1.25rem;
   height: max-content;
 }
 
-.downYouGo{
+.downYouGo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position: sticky; 
+  position: sticky;
   flex-wrap: wrap;
-
 }
 
-.howCanOneHelp{
+.howCanOneHelp {
   color: white;
   font-weight: 1000;
 }
 
-.howCanOneHelp p{
+.howCanOneHelp p {
   text-align: center;
   font-size: 3.125rem;
-
 }
 
-.helpUser{
+.helpUser {
   display: inline-block;
   position: relative;
   background: white;
@@ -493,70 +485,68 @@ justify-content: center;
   height: max-content;
   width: 25rem;
   font-size: 1.5625rem;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
 }
 
-.helpUserClicked{
+.helpUserClicked {
   display: none;
-width: 25rem;
-background: white;
-border: .125rem solid black;
-padding-left: 2rem;
-
+  width: 25rem;
+  background: white;
+  border: 0.125rem solid black;
+  padding-left: 2rem;
 }
 
-.dropDownBtn{
+.dropDownBtn {
   margin-left: 21rem;
   background: none;
   border: 0rem;
 }
 
-.active, .dropDownBtn:hover {
+.active,
+.dropDownBtn:hover {
   background-color: #ccc;
 }
 
-.dropDownBtnImg{
+.dropDownBtnImg {
   width: 1.25rem;
-  height: .625rem;
+  height: 0.625rem;
 }
 
-
-.topHelpUserP{
-  color:black;
-  margin-left:1rem;
+.topHelpUserP {
+  color: black;
+  margin-left: 1rem;
 }
 
-.helpUserImg{
+.helpUserImg {
   width: 15.625rem;
   height: 15.625rem;
   margin-left: 1rem;
 }
 
-.underHelpUserP{
-  margin: 0 1rem 0 1rem; 
+.underHelpUserP {
+  margin: 0 1rem 0 1rem;
   color: gray;
 }
 
-.lastResort{
+.lastResort {
   display: flex;
   flex-direction: column;
   text-align: center;
   position: sticky;
   align-content: center;
   flex-wrap: wrap;
-
 }
 
-.lastResortContent{
+.lastResortContent {
   background: white;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   width: 90vw;
- 
+
   margin: 2rem;
 }
 
-.lastResortContent h2{
-   font-size: 1.875rem;
+.lastResortContent h2 {
+  font-size: 1.875rem;
 }
 
 .contactBox {
@@ -573,7 +563,7 @@ padding-left: 2rem;
   font-size: 1.25rem;
   text-align: center;
   background: white;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   height: 5rem;
   width: 25rem;
   margin-bottom: 6rem;
@@ -590,18 +580,16 @@ padding-left: 2rem;
 }
 
 .YAY {
-
   text-align: center;
   width: 90vw;
   height: 20rem;
   background: white;
-  border: .1875rem solid black;
+  border: 0.1875rem solid black;
 }
 
 .YAY h1 {
   margin: 2rem;
   font-size: 1.8125rem;
-
 }
 
 .return {
@@ -614,7 +602,7 @@ padding-left: 2rem;
   font-size: 1.5rem;
   background-color: white;
   max-height: max-content;
-  border-top: .125rem solid #505050;
+  border-top: 0.125rem solid #505050;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -625,7 +613,7 @@ padding-left: 2rem;
   font-size: 1.5rem;
   background-color: white;
   max-height: max-content;
-  border-top: .125rem solid #505050;
+  border-top: 0.125rem solid #505050;
   position: 0;
   width: 100%;
   height: 11.5%;
@@ -637,8 +625,6 @@ padding-left: 2rem;
 .copyrightHolder {
   text-align: end;
 }
-
-/* */
 
 .text {
   width: 5em;
