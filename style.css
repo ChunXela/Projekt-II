@@ -16,7 +16,7 @@ a:active {
 
 body {
   background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.5s;
 }
 
@@ -136,12 +136,12 @@ justify-content: center;
 .postArea {
   display: flex;
   gap: 0rem;
+  opacity: 1;
   overflow: hidden;
   transition: 1s;
 }
 
 .postArea.visible{
-  z-index: 100;
   opacity: 1;
   max-height: max-content;
   max-width: max-content;
@@ -312,13 +312,15 @@ justify-content: center;
   height: 20rem
 }
 
-.loginForm .userInput {
-  margin-right: 10vh;
+.loginForm .userInput label
+{
+  gap: 0.50rem;
 }
 
 .loginForm h1 {
   text-align: center;
 }
+
 
 .button {
   text-align: center;

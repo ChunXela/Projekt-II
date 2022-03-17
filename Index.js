@@ -5,46 +5,6 @@ const NavContainer = document.querySelector(".postArea");
 BtnAdd.addEventListener("click", AddNew); 
 
 
-/*
-function blablabla(){
-
-  var love = document.getElementsByClassName("likeButton");
-  var e;
-
-for (e = 0; e < love.length; e++) {
-love[e].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var likeButtonClicked = this.nextElementSibling;
-  if (likeButtonClicked.style.display === "block") {
-    likeButtonClicked.style.display = "none";
-  } else {
-    likeButtonClicked.style.display = "block";
-  }
-});
-} 
-
-}
-
-function blablabla2(){
-
-  var love = document.getElementsByClassName("likeButtonClicked");
-  var e;
-
-for (e = 0; e < love.length; e++) {
-love[e].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var likeButton = this.previousElementSibling;
-  if (likeButton.style.display === "block") {
-    likeButton.style.display = "none";
-  } else {
-    likeButton.style.display = "block";
-  }
-});
-} 
-
-}
-*/
-
 
 function AddNew() {
   let newDiv = document.createElement("div");
@@ -75,7 +35,7 @@ function AddNew() {
 
   let img = document.createElement("img");
   img.classList.add("imageOfSomething");
-  img.setAttribute("src", postImage[Math.floor(Math.random()* 17)]);
+  img.setAttribute("src", postImage[Math.floor(Math.random()* 16)]);
   img.setAttribute("alt", "The image that shows what the post is :)")
   newNav.append(img);
 
