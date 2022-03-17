@@ -149,7 +149,6 @@ a {
   margin: 1.5625rem;
   z-index: -1;
   width: 18.75rem;
-  height: 18.75rem;
   margin-top: 2.5rem;
   background-color: #505050;
   border: 0.0625rem solid black;
@@ -319,11 +318,11 @@ a {
   border: 0.125rem solid black;
   width: max-content;
   width: 25rem;
-  height: 20rem;
 }
 
-.loginForm .userInput label {
+.loginForm .userInput label input {
   gap: 0.5rem;
+  margin: 0 1rem 0 0;
 }
 
 .loginForm h1 {
@@ -338,47 +337,6 @@ a {
 .doesNotAlreadyHaveAccount {
   text-align: center;
   margin-top: 2rem;
-}
-
-.weirdBox1 {
-  width: 10rem;
-  justify-content: left;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(107, 0, 152, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border: 0.125rem solid darkred;
-  color: darkred;
-  margin-bottom: 5rem;
-  height: 45rem;
-}
-
-.weirdBox1 p {
-  text-align: center;
-  margin: 1rem;
-  font-size: 3.125rem;
-}
-
-.weirdBox2 {
-  width: 10rem;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(107, 0, 152, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border: 0.125rem solid darkred;
-  color: darkred;
-  height: 45rem;
-}
-
-.weirdBox2 p {
-  text-align: center;
-  margin: 1rem;
-  font-size: 3.125rem;
-  margin-top: 4rem;
 }
 
 /* make an account */
@@ -396,7 +354,7 @@ a {
   border: 0.0625rem solid black;
   text-align: center;
   background: white;
-  height: max-content;
+  min-height: max-content;
   width: 25rem;
 }
 .makeAccountBox h1 {
@@ -412,6 +370,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+}
+
+.userInput label input {
+  margin: 0 1rem 0 0;
 }
 
 .makeAccountBox button {
@@ -438,7 +400,7 @@ a {
   margin: 2rem;
   width: 75vw;
   font-size: 1.25rem;
-  height: max-content;
+  min-height: max-content;
 }
 
 .downYouGo {
@@ -464,7 +426,7 @@ a {
   position: relative;
   background: white;
   margin: 1rem;
-  height: max-content;
+  min-height: max-content;
   width: 25rem;
   font-size: 1.5625rem;
   border: 0.125rem solid black;
@@ -546,7 +508,6 @@ a {
   text-align: center;
   background: white;
   border: 0.125rem solid black;
-  height: 5rem;
   width: 25rem;
   margin-bottom: 6rem;
 }
@@ -564,7 +525,6 @@ a {
 .YAY {
   text-align: center;
   width: 90vw;
-  height: 20rem;
   background: white;
   border: 0.1875rem solid black;
 }
@@ -598,7 +558,6 @@ a {
   border-top: 0.125rem solid #505050;
   position: 0;
   width: 100%;
-  height: 11.5%;
 }
 
 .contactInfo {
@@ -606,10 +565,4 @@ a {
 }
 .copyrightHolder {
   text-align: end;
-}
-
-.text {
-  width: 5em;
-  height: 2em;
-  margin: 0 1em 1em 0;
 }
