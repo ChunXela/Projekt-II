@@ -210,26 +210,39 @@ a {
 
 /* about page*/
 
-.aboutPartOne {
+.about1 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: #ab058a;
+  width: 100%;
+}
+.about2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(85, 0, 146);
   width: 100%;
 }
 
 .randomImage {
-  width: 21.25rem;
-  height: 25rem;
-  margin-top: 1rem;
-  border: 0.125rem solid black;
+  max-width: 50vw;
+  width: 50vw;
+  min-width: 21.25rem;
+  height: 50vh;
+  margin: 1rem 0;
+  object-fit: cover;
 }
 
 .whoAmI {
   display: flex;
   flex-direction: column;
-  width: 21.25rem;
-  height: 25rem;
+  min-width: 21.25rem;
+  max-width: 40vw;
+  width: 40vw;
+  height: 50vh;
   color: white;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -246,8 +259,10 @@ a {
 .whatIsMakerverse {
   display: flex;
   flex-direction: column;
-  width: 21.25rem;
-  height: 25rem;
+  min-width: 21.25rem;
+  max-width: 40vw;
+  width: 40vw;
+  height: 50vh;
   color: white;
   background: linear-gradient(
     90deg,

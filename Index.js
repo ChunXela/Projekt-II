@@ -6,7 +6,7 @@ BtnAdd.addEventListener("click", AddNew);
 
 function AddNew() {
   let newDiv = document.createElement("div");
-  newDiv.classList.add("postArea Reveal");
+  newDiv.classList.add("postArea");
 
   let newA = document.createElement("a");
   newDiv.append(newA);
