@@ -215,7 +215,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #ab058a;
+  background-color: rgb(78, 78, 78);
   width: 100%;
 }
 .about2 {
@@ -223,7 +223,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: rgb(85, 0, 146);
+  background-color: indigo;
   width: 100%;
 }
 
