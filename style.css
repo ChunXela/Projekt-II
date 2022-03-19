@@ -218,20 +218,25 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #2d3300;
+  background-color: #ab058b;
   width: 100%;
+  border-radius: 2rem;
+  margin-top: 10rem;
 }
 .about2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+  border-radius: 2rem;
   justify-content: space-evenly;
   background-color: indigo;
   width: 100%;
+  margin: 10rem 0;
 }
 
 .randomImage {
-  max-width: 25rem;
+  max-width: 20rem;
   margin: 1rem 0;
   object-fit: cover;
 }
