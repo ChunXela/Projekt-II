@@ -15,7 +15,7 @@ a:active {
 }
 
 body {
-  background-image: linear-gradient(90deg, #ab058b 0, indigo 100%);
+  background-image: linear-gradient(90deg, #ab058b 0, #4a0080 100%);
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -218,7 +218,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: rgb(78, 78, 78);
+  background-color: #2d3300;
   width: 100%;
 }
 .about2 {
@@ -231,10 +231,7 @@ a {
 }
 
 .randomImage {
-  max-width: 50vw;
-  width: 50vw;
-  min-width: 21.25rem;
-  height: 50vh;
+  max-width: 25rem;
   margin: 1rem 0;
   object-fit: cover;
 }
@@ -242,67 +239,43 @@ a {
 .whoAmI {
   display: flex;
   flex-direction: column;
-  min-width: 21.25rem;
-  max-width: 40vw;
-  width: 40vw;
-  height: 50vh;
   color: white;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(107, 0, 152, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border: 0.125rem solid black;
   justify-content: center;
 }
 
 .whatIsMakerverse {
   display: flex;
   flex-direction: column;
-  min-width: 21.25rem;
-  max-width: 40vw;
-  width: 40vw;
-  height: 50vh;
   color: white;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(107, 0, 152, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: 0.125rem solid black;
   justify-content: center;
 }
 
 .whoAmI h1 {
   text-align: center;
   text-decoration: none;
-  font-size: 1.25rem;
 }
 
 .whatIsMakerverse h1 {
   text-align: center;
   text-decoration: none;
-  font-size: 1.25rem;
 }
 
 .whoAmI p {
-  margin: 0.2rem 1.25rem;
+  margin: 1.25rem;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .whatIsMakerverse p {
-  margin: 0 1.25rem;
+  margin: 1.25rem;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* login */
@@ -560,16 +533,21 @@ a {
   width: 100%;
 }
 
+.footerInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20rem;
+}
+
 .contactInfo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 .contactInfoLogo {
   width: 3rem;
-  height: 3rem;
 }
 .copyrightHolder {
   text-align: end;
