@@ -411,7 +411,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position: sticky;
+  position: relative;
   flex-wrap: wrap;
 }
 
@@ -426,14 +426,14 @@ a {
 }
 
 .helpUser {
-  display: inline-block;
+  display: block;
   position: relative;
   background: white;
   margin: 1rem;
-  min-height: max-content;
   width: 25rem;
   font-size: 1.5625rem;
   border: 0.125rem solid black;
+  position: relative;
 }
 
 .helpUserClicked {
@@ -442,6 +442,7 @@ a {
   background: white;
   border: 0.125rem solid black;
   padding-left: 2rem;
+  position: relative;
 }
 
 .dropDownBtn {
@@ -477,19 +478,14 @@ a {
 }
 
 .lastResort {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  position: sticky;
-  align-content: center;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 .lastResortContent {
   background: white;
   border: 0.125rem solid black;
   width: 90vw;
-
   margin: 2rem;
 }
 
@@ -503,8 +499,8 @@ a {
   flex-direction: row;
   gap: 1.25rem;
   justify-content: space-around;
-  position: sticky;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .contactBox div {
@@ -572,8 +568,8 @@ a {
 }
 
 .contactInfoLogo {
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
 }
 .copyrightHolder {
   text-align: end;
