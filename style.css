@@ -489,12 +489,13 @@ label {
   align-self: center;
   margin-top: 15rem;
   text-align: center;
+  margin: 15rem auto 0 auto;
+  width: 99vw;
 }
 
 .lastResortContent {
   background: white;
   border: 0.125rem solid black;
-  width: 90vw;
   margin: 2rem;
 }
 
@@ -517,7 +518,7 @@ label {
   text-align: center;
   background: white;
   border: 0.125rem solid black;
-  width: 25rem;
+  width: 22rem;
   margin-bottom: 6rem;
 }
 
