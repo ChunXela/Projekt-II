@@ -1,14 +1,14 @@
-var coll = document.getElementsByClassName("dropDownBtn");
+var coll = document.getElementsByClassName("clickToExpand");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    var helpUserClicked = this.nextElementSibling;
-    if (helpUserClicked.style.display === "block") {
-      helpUserClicked.style.display = "none";
+    var questionsAndAnswers = this.nextElementSibling;
+    if (questionsAndAnswers.style.display === "block") {
+      questionsAndAnswers.style.display = "none";
     } else {
-      helpUserClicked.style.display = "block";
+      questionsAndAnswers.style.display = "block";
     }
   });
 }
