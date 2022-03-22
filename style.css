@@ -338,6 +338,10 @@ a {
   font-size: 2rem;
 }
 
+.doesNotAlreadyHaveAccount a:hover {
+  outline: 2px solid black;
+}
+
 @media screen and (max-width: 71.25rem) {
   .loginForm {
     display: flex;
@@ -355,6 +359,8 @@ a {
     height: 6rem;
     border-radius: 0.4375rem;
     width: 50vw;
+    height: 2rem;
+    font-size: 1rem;
   }
 
   .doesNotAlreadyHaveAccount {
@@ -368,34 +374,28 @@ a {
 
 /* make an account */
 
-.makeAccount {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-height: 100%;
-}
-
 .makeAccountBox {
   overflow: hidden;
   align-items: center;
-  margin: 8.39rem;
   border: 0.0625rem solid black;
   text-align: center;
   background: white;
-  min-height: max-content;
-  min-width: 22rem;
+  height: max-content;
+  width: 50rem;
   border-radius: 1rem;
+  margin: 8.39rem auto 0 auto;
 }
 
 .makeAccountBox h1 {
   margin-top: 1rem;
+  font-size: 3rem;
 }
 
 .userAccountCreationInput {
   border-radius: 0.375rem;
-  height: 3rem;
-  font-size: 1.125rem;
-  width: 19rem;
+  height: 4rem;
+  font-size: 2rem;
+  width: 40rem;
 }
 
 .userInput {
@@ -407,17 +407,49 @@ a {
   align-items: center;
 }
 
-.userInput label input {
-  margin: 0 1rem 0 0;
-}
-
 .makeAccountBox button {
   margin-top: 1rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 51.5625rem) {
+  .makeAccountBox {
+    overflow: hidden;
+    align-items: center;
+    margin: 8.39rem auto 0 auto;
+    border: 0.0625rem solid black;
+    text-align: center;
+    background: white;
+    height: max-content;
+    width: 22rem;
+    border-radius: 1rem;
+  }
+
+  .userInput {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userAccountCreationInput {
+    border-radius: 0.375rem;
+    height: 2rem;
+    font-size: 1rem;
+    width: 20rem;
+  }
 }
 
 .alreadyHasAccount {
   text-align: center;
   margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.alreadyHasAccount a:hover {
+  outline: black solid 2px;
 }
 
 /* Support */
@@ -426,6 +458,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  color: white;
 }
 
 .helloWorld {
@@ -436,6 +469,7 @@ a {
   width: 75vw;
   font-size: 1.25rem;
   min-height: max-content;
+  color: black;
 }
 
 .howCanOneHelp p {
@@ -515,7 +549,7 @@ a {
   display: flex;
   flex-direction: column;
   align-self: center;
-  color: black;
+  color: white;
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
@@ -547,10 +581,18 @@ a {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.clickToExpand:hover {
+  outline: white solid 2px;
 }
 
 .questionsAndAnswers {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-self: center;
   margin-right: auto;
@@ -563,6 +605,7 @@ a {
   text-align: center;
   margin: 15rem auto 0 auto;
   width: 99vw;
+  color: black;
 }
 
 .lastResortContent {
@@ -583,6 +626,7 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   position: relative;
+  color: black;
 }
 
 .contactBox div {
