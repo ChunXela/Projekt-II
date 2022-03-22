@@ -220,7 +220,6 @@ a {
   justify-content: space-evenly;
   background-color: #ab058b;
   width: 100%;
-  border-radius: 2rem;
   margin-top: 10rem;
 }
 .about2 {
@@ -228,7 +227,6 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  border-radius: 2rem;
   justify-content: space-evenly;
   background-color: indigo;
   width: 100%;
@@ -480,40 +478,47 @@ a {
 .helpUserOne {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 3rem;
   background-color: #ab058b;
   width: 100%;
   font-size: 1.5625rem;
-  border-radius: 1rem;
 }
 
 .helpUserTwo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 3rem;
   background-color: indigo;
   width: 100%;
   font-size: 1.5625rem;
-  border-radius: 1rem;
 }
 
 .helpUserThree {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 3rem;
   background-color: #ab058b;
   width: 100%;
   font-size: 1.5625rem;
   border-radius: 1rem;
+}
+
+.expandDiv {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 87.5rem) {
   .helpUserOne {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 3rem;
     background-color: #ab058b;
@@ -525,6 +530,7 @@ a {
   .helpUserTwo {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 3rem;
     background-color: indigo;
@@ -535,7 +541,9 @@ a {
 
   .helpUserThree {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 3rem;
     background-color: #ab058b;
@@ -550,8 +558,6 @@ a {
   flex-direction: column;
   align-self: center;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 2rem;
 }
 
@@ -561,8 +567,6 @@ a {
   align-self: center;
   width: 20rem;
   height: 20rem;
-  margin-left: auto;
-  margin-right: auto;
   object-fit: cover;
 }
 
@@ -570,8 +574,6 @@ a {
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
   list-style-type: none;
 }
 
@@ -593,10 +595,12 @@ a {
 
 .questionsAndAnswers {
   display: none;
+  list-style-type: none;
   flex-direction: column;
   align-self: center;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .lastResort {
